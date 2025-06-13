@@ -1,0 +1,39 @@
+    html {
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    body {
+
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+
+    }
+
+    video {
+      border-radius: 10px;
+      box-shadow: 2px 2px 20px black;
+        height: 90dvh;
+        width: 90vw;
+
+    }
+
+    .selection{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1rem;
+        .containerSelection{
+            p{
+                text-align: center;
+            }
+           margin: 1rem;
+           video{
+            height: 100px;
+            width: 100px;
+           }
+        }
+    }
+
