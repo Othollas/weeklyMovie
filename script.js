@@ -43,7 +43,7 @@ function movie(nom, videoName) {
   return `
      <div class="containerSelection">
         <p>${nom}</p>
-        <video  class="video-js vignette" preload="auto" width="100px" height="100px" poster="./assets/AyQX8Z_460svav1.png"
+        <video  class="video-js vignette" preload="auto" muted width="100px" height="100px" poster="./assets/AyQX8Z_460svav1.png"
         data-setup="{}">
         <source src="./assets/${videoName}.mp4" type="video/mp4"/>
         <source src="MY_VIDEO.webm" type="video/webm" />
@@ -60,6 +60,15 @@ setTimeout(() => {
   console.log(videos)
   videos.forEach((videoEl) => {
     const player = videojs(videoEl, { controls: false });
+
+videoEl.addEventListener("click", ()=>{
+  let videoPrincipale = document.getElementById("my-video");
+  player.currentTime(0);
+  const source = videoEl.firstChild.src;
+  const src = videoEl.firstChild.getAttribute('src');
+  const videoPrincipaleSrc = videoPrincipale.firstChild;
+
+})
 
     videoEl.addEventListener("mouseenter", () => {
       player.currentTime(0);

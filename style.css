@@ -6,12 +6,14 @@
     body {
 
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
       
 
     }
+
+.container{
+  display: flex;
+  justify-content: space-around;
+}
 
     video {
       border-radius: 10px;
@@ -23,11 +25,14 @@
 
     .selection{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+
         margin: 1rem;
         .containerSelection{
+          display: flex;
             p{
                 text-align: center;
+                margin: 1rem;
             }
            margin: 1rem;
            video{
