@@ -1,49 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="./libs/video-js.min.css" rel="stylesheet" />
-
-  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MiniTube - Accueil</title>
+  <link rel="icon" href="media/favicon.ico" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-
 <body>
+  <header class="header">
+    <h1>MiniTube</h1>
+  </header>
 
-  <div class="container">
+  <main class="video-grid" id="video-list">
+    <!-- Les vidéos seront générées ici -->
+  </main>
 
-
-
-
-    <div class="video">
-      <video id="my-video" class="video-js" controls preload="auto" width="" height="" poster="./assets/aAyQX8Z_460svav1.png"
-        data-setup="{  }">
-        <!-- <track kind="subtitles" src="assets/bababan vostfr.vtt" srclang="fr" label="Français" default />
-    <track kind="subtitles" src="assets/bababan japan.vtt" srclang="ja" label="Japonaise" /> -->
-        <source src="./assets/aAyQX8Z_460svav1.mp4" type="video/mp4" />
-        <source src="MY_VIDEO.webm" type="video/webm" />
-        <p class="vjs-no-js">
-     
-         
-        </p>
-      </video>
-    </div>
-
-
-    <div class="selection">
-
-    </div>
-
-  </div>
-
-
-  
-
+  <script src="assets/js/movies.js"></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
-  <script src="./libs/video.min.js"></script>
-  <script src="script.js"></script>
 </html>
