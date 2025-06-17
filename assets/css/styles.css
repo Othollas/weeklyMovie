@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+.header {
+  background: #202020;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.video-card {
+  cursor: pointer;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.video-card:hover {
+  transform: scale(1.03);
+}
+
+.video-card img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.video-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
